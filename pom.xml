@@ -37,6 +37,14 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>deploymentRepo</id>
+			<name>nexus_devop</name>
+			<url>http://192.168.122.1:8081/repository/nexus_devop/</url>
+		</repository>
+	
+	</distributionManagement>
 
 	<build>
 		<plugins>
