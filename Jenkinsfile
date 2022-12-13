@@ -62,7 +62,7 @@ pipeline {
         }
         stage("Building Docker Image") {
                 steps{
-                    sh 'docker build -t haitham124/ratrapage .'
+                    sh 'docker build -t haitham124/achat .'
                 }
         }
         stage("Login to DockerHub") {
@@ -73,7 +73,7 @@ pipeline {
         }
         stage("Push to DockerHub") {
                 steps{
-                    sh 'docker push haitham124/ratrapage'
+                    sh 'docker push haitham124/achat'
                 }
         }
         
